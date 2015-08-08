@@ -1,0 +1,13 @@
+<div class="sponsor-container">
+  <div class="container">
+    <div class="sponsor-list">
+      <h2>Our Sponsors:</h2>
+      <div class="sponsor-space">
+        <a href="http://www.booking.com" class="sponsor booking"></a>
+        <a href="http://www.vintegris.com/" class="sponsor vintegris"></a>
+        <a href="http://soysuper.com" class="sponsor soysuper"></a>
+      </div>
+      <h2 class="join">Want to be a sponsor? Send mail to <b><a href="mailto:workshop2015@perl.cat">workshop2015@perl.cat</a></b></h2>
+    </div>
+  </div>
+</div>
