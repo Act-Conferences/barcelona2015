@@ -1,3 +1,12 @@
+<!--
+  --
+  -- FIXME: This template should not be necessary but there's something
+  --        wrong that makes Act believe we're using YEF payment type.
+  --        Thus, removing the text requesting users to confirm/pay the
+  --        tickets for an event that is gratis.
+  --
+  -->
+
 [% WRAPPER ui title = loc("Main private page") %]
 <p>
  {{This is your personal page.}}
@@ -10,31 +19,7 @@
 
 [% IF global.request.conference %]
     [% IF global.request.user.has_registered %]
-<!-- payment_type = "[% global.config.payment_type %]" -->
-        [% IF global.request.user.has_paid %]
-            <p>{{You have purchased your conference ticket:}}</p>
-            <p><blockquote>
-                {{Order number}}: <strong>[% order.order_id %]</strong><br />
-                {{Payment date}}: <strong>[% date_format(order.datetime, 'datetime_full') %] GMT</strong><br />
-                {{Amount paid}}: <strong>[% order.amount %] [% order.currency %]</strong>
-            </blockquote/></p>
-            [% IF global.config.payment_invoices %]
-                <p>[% loc("Download your invoice", make_uri_info('invoice', order.order_id)) %]</p>
-            [% END %]
-        [% ELSIF global.config.payment_type != "NONE" %]
-            <p>
-                [% IF !global.config.registration_gratis -%]
-                {{You have not bought your conference ticket yet.}}
-                [%- ELSE -%]
-                {{You have not confirmed your participation to this conference yet.}}
-                [%- END %]
-                [% IF global.config.payment_open %]
-                     {{Please consider doing so using our online payment system.}}
-                [% ELSE %]
-                    {{Please consider doing so once our online payment system is ready.}}
-                [% END %]
-            </p>
-        [% END %]
+    <!-- FIXME: global.config.payment_type is "[% global.config.payment_type %]" but should be "NONE" -->
     [% ELSIF !global.config.closed %]
         [% loc("You did not register for this conference", make_uri('register')) %]
     [% END %]
