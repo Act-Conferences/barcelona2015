@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Language" content="[% global.request.language %]" />
+    <meta property="og:site_name" content="Barcelona Perl Workshop 2015"/>
+    <meta property="og:title" content="[% global.conference.name %][% IF title %] | [% title  %][% END %]" />
+    <meta property="og:url" content="[% global.request.r.uri %]" />
+    <meta property="og:description" content="A one-day conference with all-level related talks, with a grain of Perl." />
+    <meta property="og:image" content="[% global.request.base_url %][% make_uri_info('img', 'og-image.jpg') %]" />
     <!-- OpenId -->
     [% IF openid %]
     <link rel="openid.server" href="[% global.request.base_url %][% make_uri('openid') %]" />
