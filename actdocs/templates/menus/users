@@ -4,6 +4,8 @@
     <i class="fa fa-users hidden-md hidden-lg"></i><span class="hidden-sm"> {{Users}}</span> <b class="caret"></b>
   </a>
   <ul class="dropdown-menu">
+    <li><a href="[% make_uri('coc.html') %]">Code of Conduct</a></li>
+    <li class="divider"></li>
     <li><a href="[% make_uri('search') %]">{{Search}}</a></li>
     <li><a href="[% make_uri('stats') %]">{{Statistics}}</a></li>
 
