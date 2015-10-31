@@ -1,10 +1,10 @@
 .sponsor-container {
-  background-color: #000;
+  background-color: #333;
 }
 .sponsor-list {
   text-align: left;
   min-height: 120px;
-  padding: 20px 0 40px 0;
+  padding: 5px 0 0 0;
 }
 
 .sponsor-list h2{
@@ -22,7 +22,6 @@
 }
 
 .sponsor-list .join {
-  padding-top: 45px;
   padding-top: 10px;
 }
 
@@ -45,7 +44,7 @@ a.sponsor:hover {
 }
 
 .sponsor.sysdivision {
-  background-position: 0 0;
+  background-position: 0 8px;
 }
 
 .sponsor.soysuper {
