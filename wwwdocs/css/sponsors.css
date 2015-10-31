@@ -1,5 +1,6 @@
 .sponsor-container {
   background-color: #333;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 .sponsor-list {
   text-align: left;
